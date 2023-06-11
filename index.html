@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Wave</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- https://fontawesome.com/ -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+      rel="stylesheet"
+    />
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css" />
+    <!--
+Tooplate 2121 Wave Cafe
+https://www.tooplate.com/view/2121-wave-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-row">
+        <!-- Site Header -->
+        <div class="tm-left">
+          <div class="tm-left-inner">
+            <div class="tm-site-header">
+              <i class="fas fa-map-marked-alt fa-3x tm-site-logo"></i>
+              <h1 class="tm-site-name">Festival Wave</h1>
+            </div>
+            <nav class="tm-site-nav">
+              <ul class="tm-site-nav-ul">
+                <li class="tm-page-nav-item">
+                  <a href="#drink" class="tm-page-link active">
+                    <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                    <span>Festival of Korea</span>
+                  </a>
+                </li>
+                <li class="tm-page-nav-item">
+                  <a href="#about" class="tm-page-link">
+                    <i class="fas fa-users tm-page-link-icon"></i>
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li class="tm-page-nav-item">
+                  <a href="#special" class="tm-page-link">
+                    <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                    <span>Festival of abroad</span>
+                  </a>
+                </li>
+                <li class="tm-page-nav-item">
+                  <a href="#contact" class="tm-page-link">
+                    <i class="fas fa-comments tm-page-link-icon"></i>
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="tm-right">
+          <main class="tm-main">
+            <div id="drink" class="tm-page-content">
+              <!-- Drink Menu Page -->
+              <nav class="tm-black-bg tm-drinks-nav">
+                <ul>
+                  <li>
+                    <div id="temperature" style="text-align: center"></div>
+                    <a href="#" class="tm-tab-link active" data-id="cold"
+                      >Seoul</a
+                    >
+                  </li>
+
+                  <li>
+                    <div id="temp1" style="text-align: center"></div>
+                    <a href="#" class="tm-tab-link" data-id="hot">Chungnam</a>
+                  </li>
+                  <li>
+                    <div id="temp2" style="text-align: center"></div>
+                    <a href="#" class="tm-tab-link" data-id="juice">Jeju</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div id="cold" class="tm-tab-content">
+                <div class="tm-list">
+                  <div class="tm-list-item">
+                    <img
+                      src="img/iced-americano.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(1,this)"
+                      onmouseout="changeImage(2,this)"
+                    />
+
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=24779000&qvt=0&query=%EB%B0%A4%EC%9D%98%20%EC%84%9D%EC%A1%B0%EC%A0%84"
+                          rel="nofollow"
+                          target="_parent"
+                          >밤의 석조전</a
+                        >
+                        <span class="tm-list-item-price">04.11. ~ 05.11.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        전문 해설사와 함께하는 '석조전 야간 탐방'등 여러 체험이
+                        어우러진 덕수궁 야간 프로그램
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="tm-list-item">
+                    <img
+                      src="img/iced-cappuccino.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(3,this)"
+                      onmouseout="changeImage(4,this)"
+                    />
+
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=9592648&qvt=0&query=%EC%B0%BD%EB%8D%95%EA%B6%81%20%EB%8B%AC%EB%B9%9B%EA%B8%B0%ED%96%89"
+                          rel="nofollow"
+                          target="_parent"
+                          >창덕궁 달빛기행</a
+                        ><span class="tm-list-item-price">04.14. ~ 10.28.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        은은 달빛아래 창덕궁에서 전문해설사와 함께 전각에 대한
+                        해설과 전통예술공연을 관람할 수 있는 프로그램
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/iced-espresso.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(5,this)"
+                      onmouseout="changeImage(6,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=13861622&qvt=0&query=%EA%B2%BD%EB%B3%B5%EA%B6%81%20%EB%B3%84%EB%B9%9B%EC%95%BC%ED%96%89"
+                          rel="nofollow"
+                          target="_parent"
+                          >경복궁 별빛야행</a
+                        ><span class="tm-list-item-price">04.14. ~ 05.13.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        은은한 별빛 아래 경복궁 소주방에서 임금님의 수라상을
+                        맛보고, 전문해설사와 함께 하는 프로그램
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/iced-latte.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(7,this)"
+                      onmouseout="changeImage(8,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://korean.visitkorea.or.kr/detail/fes_detail.do?cotid=42fa18b4-2fde-416e-84d6-dbe2b6452870"
+                          rel="nofollow"
+                          target="_parent"
+                          >DDP 봄축제</a
+                        ><span class="tm-list-item-price">05.04. ~ 05.07.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        2023년 5월 4일~7일, 4일간 DDP(동대문디자인플라자)에서
+                        진행되는 놀이동산을 포함한 종합문화행사
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="hot" class="tm-tab-content">
+                <div class="tm-list">
+                  <div class="tm-list-item">
+                    <img
+                      src="img/hot-americano.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(9,this)"
+                      onmouseout="changeImage(10,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=25894222&qvt=0&query=%ED%94%BC%EB%82%98%ED%81%B4%EB%9E%9C%EB%93%9C%20%ED%8A%A4%EB%A6%BD%20%EC%88%98%EC%84%A0%ED%99%94%20%EC%B6%95%EC%A0%9C"
+                          rel="nofollow"
+                          target="_parent"
+                          >피나클랜드 튤립/수선화 축제</a
+                        ><span class="tm-list-item-price">03.24. ~ 05.30.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        형형색색 멋진 옷을 입은 튤립과 우와한 자태를 뽐내는
+                        수선화들의 향연
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/피나클랜드 불꽃.jpg"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(11,this)"
+                      onmouseout="changeImage(12,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://korean.visitkorea.or.kr/detail/fes_detail.do?cotid=62a25a47-ff3f-4949-a775-0056edf3d08f"
+                          rel="nofollow"
+                          target="_parent"
+                          >피나클랜드 불꽃 축제</a
+                        ><span class="tm-list-item-price">03.25. ~ 05.27.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        낮에는 튤립, 수선화가 봄을 맞이하고, 밤에는 불꽃이
+                        수놓는 피나클랜드의 봄
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/hot-espresso.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(13,this)"
+                      onmouseout="changeImage(14,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="http://www.ffestival.co.kr/main"
+                          rel="nofollow"
+                          target="_parent"
+                          >태안 빛축제</a
+                        ><span class="tm-list-item-price">01.01. ~ 12.31.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        일년 365일 연중무휴로 진행되는 태안빛축제가 대한민국의
+                        밤하늘을 책임진다.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/부소산.jpg"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(15,this)"
+                      onmouseout="changeImage(16,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=17701355&qvt=0&query=%EB%B6%80%EC%86%8C%EC%82%B0%20%EB%B4%84%20%EB%82%98%EB%93%A4%EC%9D%B4%20%EC%B6%95%EC%A0%9C"
+                          rel="nofollow"
+                          target="_parent"
+                          >부소산 봄 나들이 축제</a
+                        ><span class="tm-list-item-price">05.05. ~ 05.07.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        유네스코 세계유산인 관북리유적과 부소산성에서 즐기는
+                        특별한 경험과 부여의 봄을 만끽 할 수 있는 축제
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="juice" class="tm-tab-content">
+                <div class="tm-list">
+                  <div class="tm-list-item">
+                    <img
+                      src="img/smoothie-1.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(17,this)"
+                      onmouseout="changeImage(18,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://korean.visitkorea.or.kr/detail/fes_detail.do?cotid=02dcefcc-4cb4-48b3-bc4f-8b40ebf3d1ff&big_category=undefined&mid_category=undefined&big_area=undefined&referrer=https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=25890440&qvt=0&query=%ED%9C%B4%EC%95%A0%EB%A6%AC%20%EB%B4%84%20%EC%88%98%EA%B5%AD%EC%B6%95%EC%A0%9C"
+                          rel="nofollow"
+                          target="_parent"
+                          >휴애리 봄 수국축제</a
+                        ><span class="tm-list-item-price">04.07. ~ 06.14.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        오색빛깔 다양한 수국을 제주 휴애리 자연생활공원에서
+                        만나볼 수 있는 축제
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/smoothie-2.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(19,this)"
+                      onmouseout="changeImage(20,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=10735797&qvt=0&query=%EB%A7%88%EB%85%B8%EB%A5%B4%EB%B8%94%EB%9E%91%20%EB%B4%84%EA%BD%83%EC%B6%95%EC%A0%9C"
+                          rel="nofollow"
+                          target="_parent"
+                          >마노르블랑 봄꽃 축제</a
+                        ><span class="tm-list-item-price">03.05. ~ 04.16.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        다양한 색의 프리지아, 애니시다, 서향동백 등 아름다운
+                        꽃과 즐기는 가든 카페의 꽃향기 축제
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/고사리.jpg"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(21,this)"
+                      onmouseout="changeImage(22,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="http://www.jejugosari.net/"
+                          rel="nofollow"
+                          target="_parent"
+                          >한라산 청정 고사리 축제</a
+                        ><span class="tm-list-item-price">04.29. ~ 04.30.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        고사리를 테마로 도민과 관광객에게 제주의 문화를 전달하는
+                        다양한 프로그램
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tm-list-item">
+                    <img
+                      src="img/smoothie-4.png"
+                      alt="Image"
+                      class="tm-list-item-img"
+                      onclick="changeImage(23,this)"
+                      onmouseout="changeImage(24,this)"
+                    />
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">
+                        <a
+                          href="https://korean.visitkorea.or.kr/detail/fes_detail.do?cotid=2ec8235d-eed8-4f28-b894-6cd55e3f106f&big_category=undefined&mid_category=undefined&big_area=undefined&referrer=https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bk00&pkid=110&os=28780574&qvt=0&query=%EC%A0%9C%EC%A3%BC%20%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC%20%EB%AC%B8%ED%99%94%EC%B6%95%EC%A0%9C"
+                          rel="nofollow"
+                          target="_parent"
+                          >제주 반려동물 축제</a
+                        ><span class="tm-list-item-price">05.06. ~ 05.07.</span>
+                      </h3>
+                      <p class="tm-list-item-description">
+                        올바른 반려동물 문화 정착으로 사람과 동물이 행복한
+                        제주를 위한 축제
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Drink Menu Page -->
+            </div>
+
+            <!-- About Us Page -->
+            <div id="about" class="tm-page-content">
+              <div class="tm-black-bg tm-mb-20 tm-about-box-1">
+                <h2 class="tm-text-primary tm-about-header">About Festival Wave</h2>
+                <div class="tm-list-item tm-list-item-2">
+                  <img
+                    src="img/about-1.png"
+                    alt="Image"
+                    class="tm-list-item-img tm-list-item-img-big"
+                  />
+                  <div class="tm-list-item-text-2">
+                    <p>
+                      강채린: 웹 디자인, Festival of abroad Page 제작, About Us
+                      Page 제작, Contact Page 제작, Javascript<br />github:
+                      <a
+                        href="https://github.com/QWOFTQ?tab=repositories"
+                        rel="nofollow"
+                        target="_parent"
+                        >link</a
+                      >
+                      <br />개인 홈페이지 주소:
+                      <a
+                        href="https://portfolio-final92.netlify.app"
+                        rel="nofollow"
+                        target="_parent"
+                        >link</a
+                      >
+                    </p>
+                    <p>
+                      홍예진: 웹 디자인, Festival of Korea Page 제작, 웹페이지
+                      데모 영상 촬영, Javascript<br />github:
+                      <a
+                        href="https://github.com/Han-Enc?tab=repositories"
+                        rel="nofollow"
+                        target="_parent"
+                        >link</a
+                      >
+
+                      <br />개인 홈페이지 주소:
+                      <a
+                        href="https://enc-personal-portfolio.netlify.app"
+                        rel="nofollow"
+                        target="_parent"
+                        >link</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+                <div class="tm-list-item tm-list-item-2">
+                  <div class="tm-list-item-text-2">
+                    <h2 class="tm-text-primary">YouTube - 중간고사</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c2b7wmi90bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+              </div>
+
+              <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+                <div class="tm-list-item tm-list-item-2">
+                  <div class="tm-list-item-text-2">
+                    <h2 class="tm-text-primary">YouTube - 기말고사</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gzgwPRkVl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+              </div>
+
+              <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+                <div class="tm-list-item tm-list-item-2">
+                  <div class="tm-list-item-text-2">
+                    <h2 class="tm-text-primary">Weather</h2>
+                    <div class="card">
+                      <div class="search">
+                        <input
+                          type="text"
+                          placeholder="enter city name"
+                          spellcheck="false"
+                        />
+                        <button><img src="img/weather/search.png" /></button>
+                      </div>
+
+                      <div class="error">
+                        <p>Invalid city name</p>
+                      </div>
+
+                      <div class="weather">
+                        <img
+                          src="img/weather/clouds.png"
+                          class="weather-icon"
+                        />
+                        <h1 class="temp">21.2°C</h1>
+                        <h2 class="city">Seoul</h2>
+                        <div class="details">
+                          <div class="col">
+                            <img src="img/weather/humidity.png" />
+                            <div>
+                              <p>Humidity</p>
+                              <p class="humidity">78%</p>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <img src="img/weather/wind.png" />
+                            <div>
+                              <p>Wind Speed</p>
+                              <p class="wind">3.5m/s</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end About Us Page -->
+
+            <!-- Special Items Page -->
+            <div id="special" class="tm-page-content">
+              <div class="tm-special-items">
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/tulip.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      캐나다 오타와 튤립 축제
+                    </h2>
+                    <p>개최 기간 : 2023.5.12 ~ 5.22</p>
+                    <p class="tm-special-item-text">
+                      캐나다 튤립 축제는 1953년 이래 매년 5월 오타와에서
+                      300,000개 이상의 튤립 중에서 커미너스 <br />파크에서
+                      열린다.
+                    </p>
+                    <a
+                      href="https://tulipfestival.ca/"
+                      rel="nofollow"
+                      target="_parent"
+                      >The Canadian Tulip Legacy</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/BIFFF.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      벨기에 브뤼셀 <br />
+                      국제 판타스틱 영화제
+                    </h2>
+                    <p>개최 기간 : 2023.4.11 ~ 4.23</p>
+                    <p class="tm-special-item-text">
+                      브뤼셀 국제 판타스틱 영화제인 BIFF는 올해로 41회째이다.
+                      <br />축제 동안, 100개 이상의 장편과 단편 영화를 즐길 수
+                      있다.
+                    </p>
+                    <a
+                      href="https://www.bifff.net/"
+                      rel="nofollow"
+                      target="_parent"
+                      >BIFFF</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/holland.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      네덜란드 쾨켄호프 꽃 <br />축제
+                    </h2>
+                    <p>개최 기간 : 2023.3.23 ~ 5.14</p>
+
+                    <p class="tm-special-item-text">
+                      쾨켄호프는 ‘꽃의 나라’ 네덜란드의 명성을 반영하는 세계적인
+                      꽃 축제로, 튤립뿐 아니라 수선화, 히아신스, 카네이션,
+                      프리지어 등 수백만 개의 구근식물을 한자리에 모아 놓은 지상
+                      최대의 구근 화훼류 전시다.
+                    </p>
+                    <a
+                      href="https://keukenhof.nl/en/"
+                      rel="nofollow"
+                      target="_parent"
+                      >Keueknhof Holland</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/bath.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      영국 바스 프린지 <br />페스티벌
+                    </h2>
+                    <p>개최 기간 : 2023.5.26 ~ 6.11</p>
+                    <p class="tm-special-item-text">
+                      프린지 페스티벌은 비전문가, 아마추어, 전문단체 등 예술을
+                      즐기고 싶은 다양한 사람이 참가할 수 있는 일종의
+                      대안문화축제이다. 누구나 자유롭게 참가할 수 있고, 작품의
+                      제한이 없다.
+                    </p>
+                    <a
+                      href="https://www.bathfringe.co.uk/"
+                      rel="nofollow"
+                      target="_parent"
+                      >Bath Fringe Festival</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/vivid.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      호주 비비드 시드니
+                    </h2>
+                    <p>개최 기간 : 2023.5.26 ~ 6.17</p>
+                    <p class="tm-special-item-text">
+                      빛과 음악, 아이디어의 세 가지 요소를 주제로 시드니의
+                      겨울을 화려하게 수놓는 세계 최대 빛 <br />
+                      축제다.
+                    </p>
+                    <a
+                      href="https://www.vividsydney.com/"
+                      rel="nofollow"
+                      target="_parent"
+                      >Vivid Sydney</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="tm-black-bg tm-special-item"
+                  style="text-align: center"
+                >
+                  <img src="img/design.png" alt="Image" class="img" />
+                  <div class="tm-special-item-description">
+                    <h2 class="tm-text-primary tm-special-item-title">
+                      도쿄 디자인 페스타
+                    </h2>
+                    <p>개최 기간 : 2023.5.20 ~ 5.21</p>
+                    <p class="tm-special-item-text">
+                      국제적인 아트 이벤트. 영혼을 <br />담은 아트 작품이나
+                      일상을 물들이는 잡화, 아티스트와의 교류, 라이브 퍼포먼스
+                      에리어나 세계 각국의 음식 등을 즐길 수 있다.
+                    </p>
+
+                    <a
+                      href="https://designfesta.com/"
+                      rel="nofollow"
+                      target="_parent"
+                      >Design Festa</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Special Items Page -->
+
+            <!-- Contact Page -->
+            <div id="contact" class="tm-page-content">
+              <div class="tm-black-bg tm-contact-text-container">
+                <h2 class="tm-text-primary">Contact with Us</h2>
+                <p>
+                  이 웹사이트가 마음에 드셨나요? 다른 작품을 저희에게
+                  의뢰해보세요! 아래의 폼으로 연락할 수 있습니다.
+                </p>
+              </div>
+              <div class="tm-black-bg tm-contact-form-container tm-align-right">
+                <form action="#" id="contact-form">
+                  <div class="tm-form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="tm-form-control"
+                      placeholder="Name"
+                      required=""
+                      id="name"
+                    />
+                  </div>
+                  <div class="tm-form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="tm-form-control"
+                      placeholder="Email"
+                      required=""
+                      id="email"
+                    />
+                  </div>
+                  <div class="tm-form-group tm-mb-30">
+                    <textarea
+                      rows="6"
+                      name="message"
+                      class="tm-form-control"
+                      placeholder="Message"
+                      required=""
+                      id="message"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      class="tm-btn-primary tm-align-right"
+                      id="submit"
+                      onclick="sendMail()"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end Contact Page -->
+          </main>
+        </div>
+      </div>
+      <footer class="tm-site-footer">
+        <p class="tm-black-bg tm-footer-text">
+          Copyright 2023 Festival Wave | Design:
+          <a
+            href="https://www.tooplate.com"
+            class="tm-footer-link"
+            rel="sponsored"
+            target="_parent"
+            >Tooplate</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <!-- Background video -->
+    <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+        <source src="video/wave-cafe-video-bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/email.js"></script>
+
+    <!-- 이메일 기능 -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('s3NJ2gPYXiR9MiXxR')
+      })()
+    </script>
+    <!-- 이메일 기능 끝 -->
+
+    <script>
+      function setVideoSize() {
+        const vidWidth = 1920
+        const vidHeight = 1080
+        const windowWidth = window.innerWidth
+        const windowHeight = window.innerHeight
+        const tempVidWidth = (windowHeight * vidWidth) / vidHeight
+        const tempVidHeight = (windowWidth * vidHeight) / vidWidth
+        const newVidWidth =
+          tempVidWidth > windowWidth ? tempVidWidth : windowWidth
+        const newVidHeight =
+          tempVidHeight > windowHeight ? tempVidHeight : windowHeight
+        const tmVideo = $('#tm-video')
+
+        tmVideo.css('width', newVidWidth)
+        tmVideo.css('height', newVidHeight)
+      }
+
+      function openTab(evt, id) {
+        $('.tm-tab-content').hide()
+        $('#' + id).show()
+        $('.tm-tab-link').removeClass('active')
+        $(evt.currentTarget).addClass('active')
+      }
+
+      function initPage() {
+        let pageId = location.hash
+
+        if (pageId) {
+          highlightMenu($(`.tm-page-link[href^="${pageId}"]`))
+          showPage($(pageId))
+        } else {
+          pageId = $('.tm-page-link.active').attr('href')
+          showPage($(pageId))
+        }
+      }
+
+      function highlightMenu(menuItem) {
+        $('.tm-page-link').removeClass('active')
+        menuItem.addClass('active')
+      }
+
+      function showPage(page) {
+        $('.tm-page-content').hide()
+        page.show()
+      }
+
+      $(document).ready(function () {
+        /***************** Pages *****************/
+
+        initPage()
+
+        $('.tm-page-link').click(function (event) {
+          if (window.innerWidth > 991) {
+            event.preventDefault()
+          }
+
+          highlightMenu($(event.currentTarget))
+          showPage($(event.currentTarget.hash))
+        })
+
+        /***************** Tabs *******************/
+
+        $('.tm-tab-link').on('click', (e) => {
+          e.preventDefault()
+          openTab(e, $(e.target).data('id'))
+        })
+
+        $('.tm-tab-link.active').click() // Open default tab
+
+        /************** Video background *********/
+
+        setVideoSize()
+
+        // Set video background size based on window size
+        let timeout
+        window.onresize = function () {
+          clearTimeout(timeout)
+          timeout = setTimeout(setVideoSize, 100)
+        }
+
+        // Play/Pause button for video background
+        const btn = $('#tm-video-control-button')
+
+        btn.on('click', function (e) {
+          const video = document.getElementById('tm-video')
+          $(this).removeClass()
+
+          if (video.paused) {
+            video.play()
+            $(this).addClass('fas fa-pause')
+          } else {
+            video.pause()
+            $(this).addClass('fas fa-play')
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
